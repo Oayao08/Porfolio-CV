@@ -1,5 +1,5 @@
 /*Fuentes y Reset básico*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Montserrat', serif;
+  font-family: "Montserrat", serif;
   line-height: 1.6;
   background-color: #f8f8f8;
   color: #333;
@@ -30,7 +30,67 @@ body {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
+}
 
+/* Estilo general del dropdown */
+.dropdown {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.dropbtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Contenido del dropdown (oculto por defecto) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1a1a1a; /* Fondo oscuro acorde a portafolios tech */
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+/* Enlaces dentro del dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+/* Mostrar el menú al pasar el ratón */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .nav-links {
@@ -71,8 +131,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.hero-content{
-
+.hero-content {
 }
 
 /*Secciones*/
@@ -100,13 +159,17 @@ h3 {
   border-radius: 10px;
   padding: 2rem;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-10px); /*Sirve para elevar la tarjeta al pasar el mouse sobre ella*/
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(
+    -10px
+  ); /*Sirve para elevar la tarjeta al pasar el mouse sobre ella*/
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card h4 {
