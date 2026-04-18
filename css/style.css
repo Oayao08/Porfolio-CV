@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  background: linear-gradient(90deg, #888888, #1c1c1c);
+  background: #111827;
   color: #fff;
   position: sticky;
   top: 0;
@@ -124,7 +124,7 @@ a {
   align-items: center;
   text-align: center;
   min-height: 80vh;
-  background: linear-gradient(135deg, #ff3c00, #ff8c00);
+  background: linear-gradient(135deg, #111827, #1f2937);
   color: #fff;
   padding: 2rem;
 }
@@ -137,9 +137,6 @@ a {
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-}
-
-.hero-content {
 }
 
 /*Secciones*/
@@ -171,6 +168,8 @@ h3 {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
@@ -182,24 +181,28 @@ h3 {
 
 .card h4 {
   margin-bottom: 1rem;
-  color: #ff8c00;
+  color: #2563eb;
 }
 
 .card p {
   margin-bottom: 1rem;
+  color: #6b7280;
 }
 
 .card a {
   text-decoration: none;
   color: #fff;
-  background-color: #ff8c00;
+  background-color: #2563eb;
   padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 5px; 
+  transition: background-color 0.5s ease;
+  display: inline-block;
+  margin-top: 10px;
+  border:  #1d4ed8 1px solid;
 }
 
 .card a:hover {
-  background-color: #ffa500;
+  background-color: #1037a0;
 }
 
 /* Sección Sobre mí*/
@@ -238,6 +241,11 @@ footer {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 1s forwards;
+}
+
+::selection {
+  background: #ccc;
+  color: white;
 }
 
 @keyframes fadeIn {
