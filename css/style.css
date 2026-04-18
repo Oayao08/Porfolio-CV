@@ -27,9 +27,17 @@ body {
   z-index: 100;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
+}
+
+.logo a {
+  color: #fff;
 }
 
 /* Estilo general del dropdown */
