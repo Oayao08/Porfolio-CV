@@ -1,6 +1,6 @@
-// Scroll suave menú
 console.log("Funciona correctamente");
 
+// Scroll suave menú
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 const translations = {
   ca: {
-    flag: "️️️️🚩", // Puedes usar emojis o texto
+    flag: "️️️️🚩",
     langName: "CA",
     "nav-projects": "Projectes",
     "nav-about": "Sobre mi",
@@ -76,6 +76,28 @@ const translations = {
       "Computer science student passionate about IT and data analytics. With 500h of experience in telecom.",
     "contact-title": "Contact",
     "footer-text": "© 2026 Omar Ayaou",
+  },
+  ar: {
+    flag: "🇸🇦",
+    langName: "AR",
+    "nav-projects": "المشاريع",
+    "nav-about": "نبذة عني",
+    "nav-contact": "اتصل",
+    "hero-title": "طالب المعلوماتية الدقيقة",
+    "hero-subtitle": "HTML · CSS · JavaScript أساسي",
+    "projects-title": "المشاريع",
+    "card1-title": "صفحة ويب بـ HTML + CSS",
+    "card1-text": "مشروع أكاديمي لموقع ثابت باستخدام HTML و CSS.",
+    "card2-title": "تصميم نموذج ويب",
+    "card2-text": "موقع متجاوب تم إنشاؤه باستخدام HTML و CSS و JavaScript.",
+    "view-project": "عرض المشروع",
+    "view-repo": "عرض المستودع",
+    "more-github": "عرض المزيد على GitHub",
+    "about-title": "نبذة عني",
+    "about-text":
+      "طالب علوم الحاسوب شغوف بتقنية المعلومات وتحليل البيانات. لدي 500 ساعة من الخبرة في مجال الاتصالات.",
+    "contact-title": "اتصل",
+    "footer-text": "© 2026 عمر عياو",
   },
 };
 
