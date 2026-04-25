@@ -3,118 +3,134 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio - Omar Ayaou</title>
+    <title>Omar Ayaou  - Portafolio</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="navbar">
-      <h1 class="logo"> <a href="#hero">
-        Omar Ayaou Ouahdane</h1>
-        </a>
+      <div class="logo">
+        <a href="#inicio">Omar Ayaou</a>
+      </div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#proyectos" data-key="nav-projects">Proyectos</a></li>
+          <li><a href="#inicio" data-key="nav-home">Inicio</a></li>
           <li><a href="#sobre-mi" data-key="nav-about">Sobre mí</a></li>
+          <li><a href="#proyectos" data-key="nav-projects">Proyectos</a></li>
           <li><a href="#contacto" data-key="nav-contact">Contacto</a></li>
           <li class="dropdown">
             <button class="dropbtn">
+              <span id="current-flag">🇪🇸</span>
               <span id="current-lang-text">ES</span>
             </button>
             <div class="dropdown-content">
               <a href="#" onclick="changeLanguage('ca')">CA</a>
               <a href="#" onclick="changeLanguage('es')">ES</a>
               <a href="#" onclick="changeLanguage('en')">EN</a>
-              <a href="#" onclick="changeLanguage('ar')">AR</a>
             </div>
           </li>
         </ul>
       </nav>
     </header>
-
-    <hero>
-      <section id="hero" class="hero fade-in">
+    
+    <main>
+      <section id="inicio" class="hero fade-in">
         <div class="hero-content">
-          <h2 data-key="hero-title">Estudiante de microinformática</h2>
-          <p data-key="hero-subtitle">HTML · CSS · JavaScript básico</p>
+          <p class="hero-greeting" data-key="hero-greeting">Hola, soy Omar Ayaou 👋</p>
+          <img src="assets/logo.png" alt="Retrat de Omar Ayaou">
+          <h1 data-key="hero-title">Técnico Microinformático Junior</h1>
+          <p class="hero-subtitle" data-key="hero-subtitle">
+            Enfocado en soporte técnico, redes y desarrollo web front-end. Busco mi primera gran oportunidad para aportar valor y seguir creciendo.
+          </p>
+          <a href="#contacto" class="btn-primary" data-key="hero-btn">Hablemos</a>
         </div>
       </section>
 
-      <section id="proyectos" class="proyectos fade-in">
-        <h3 data-key="projects-title">Proyectos</h3>
-
-        <div class="container">
-          <div class="card">
-            <h4 data-key="card1-title">Página web HTML + CSS</h4>
-            <p data-key="card1-text">
-              Proyecto académico de página web estática con HTML y CSS.
+      <section id="sobre-mi" class="about fade-in">
+        <h2 class="section-title" data-key="about-title">Sobre mí</h2>
+        <div class="about-container">
+          <div class="about-text">
+            <p data-key="about-text-1">
+              Soy estudiante de informática con un perfil versátil. Me apasiona entender cómo funcionan los sistemas desde la base hasta la interfaz que ve el usuario.
             </p>
-            <a
-              href="https://oayao08.github.io/Montblanc-S.A./"
-              data-key="view-project"
-              >Ver proyecto</a
-            >
-            <br />
-            <a
-              href="https://github.com/Oayao08/Montblanc-S.A."
-              data-key="view-repo"
-              >Ver repositorio</a
-            >
-          </div>
-
-          <div class="card">
-            <h4 data-key="card2-title">Maquetación de prototipos web</h4>
-            <p data-key="card2-text">
-              Web responsive creada con HTML, CSS y JavaScript.
+            <p data-key="about-text-2">
+              Cuento con experiencia práctica en telecomunicaciones, donde aprendí a diagnosticar problemas, dar soporte técnico y trabajar en equipo. Destaco por mi capacidad de aprendizaje rápido y mi actitud proactiva ante nuevos retos tecnológicos.
             </p>
-            <a
-              href="https://oayao08.github.io/Projecte4-Maquetacio-de-Prototips_Web/"
-              data-key="view-project"
-              >Ver proyecto</a
-            >
-            <br />
-            <a
-              href="https://github.com/Oayao08/Projecte4-Maquetacio-de-Prototips_Web"
-              data-key="view-repo"
-              >Ver repositorio</a
-            >
           </div>
-
-          <div class="card">
-            <a href="#" data-key="more-github">Ver más en GitHub</a>
+          <div class="skills-box">
+            <h3 data-key="skills-title">Habilidades Técnicas</h3>
+            <div class="skills-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript (Básico)</span>
+              <span class="tag">Soporte Técnico</span>
+              <span class="tag">Redes</span>
+              <span class="tag">Resolución de incidencias</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="sobre-mi" class="sobre-mi fade-in">
-        <h3 data-key="about-title">Sobre mí</h3>
-        <p data-key="about-text">
-          Estudiante de informática apasionado por la informática y la analítica
-          de datos.
-        </p>
+      <section id="proyectos" class="projects bg-light fade-in">
+        <h2 class="section-title" data-key="projects-title">Proyectos Destacados</h2>
+        <p class="section-subtitle" data-key="projects-subtitle">Trabajos académicos y prácticas personales</p>
+
+        <div class="projects-grid">
+          <div class="card">
+            <div class="card-content">
+              <h3 data-key="card1-title">Página web Corporativa (HTML/CSS)</h3>
+              <p data-key="card1-text">
+                Proyecto académico construyendo una página web estática desde cero utilizando semántica HTML y estilos CSS.
+              </p>
+              <div class="card-links">
+                <a href="https://oayao08.github.io/Montblanc-S.A./" target="_blank" data-key="view-project">Ver web</a>
+                <a href="https://github.com/Oayao08/Montblanc-S.A." target="_blank" class="btn-outline" data-key="view-repo">Código</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-content">
+              <h3 data-key="card2-title">Maquetación de Prototipos</h3>
+              <p data-key="card2-text">
+                Implementación de diseño web responsive, asegurando la adaptabilidad en dispositivos móviles usando HTML, CSS y JavaScript básico.
+              </p>
+              <div class="card-links">
+                <a href="https://oayao08.github.io/Projecte4-Maquetacio-de-Prototips_Web/" target="_blank" data-key="view-project">Ver web</a>
+                <a href="https://github.com/Oayao08/Projecte4-Maquetacio-de-Prototips_Web" target="_blank" class="btn-outline" data-key="view-repo">Código</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="more-projects">
+          <a href="https://github.com/Oayao08" target="_blank" class="btn-outline" data-key="more-github">Ver mi perfil en GitHub</a>
+        </div>
       </section>
 
-      <section id="contacto" class="contacto fade-in">
-        <h3 data-key="contact-title">Contacto</h3>
-        <p>
-          📧 <a href="mailto:ayaouomar333@gmail.com">ayaouomar333@gmail.com</a>
-        </p>
-        <p>📞 <a href="tel:+34641169571">+34 641 16 95 71</a></p>
-        <p>
-          💼 <a href="https://github.com/Oayao08" target="_blank">GitHub</a>
-        </p>
-        <p>
-          <a href="https://linkedin.com/in/omar-ayaou" target="_blank">
-            LinkedIn
+      <section id="contacto" class="contact fade-in">
+        <h2 class="section-title" data-key="contact-title">Contacto</h2>
+        <p class="contact-desc" data-key="contact-desc">¿Buscas un perfil junior motivado para tu equipo? Estaré encantado de hablar contigo.</p>
+        
+        <div class="contact-links">
+          <a href="mailto:ayaouomar333@gmail.com" class="contact-item">
+            <span>📧 ayaouomar333@gmail.com</span>
           </a>
-        </p>
+          <a href="tel:+34641169571" class="contact-item">
+            <span>📞 +34 641 16 95 71</span>
+          </a>
+          <a href="https://linkedin.com/in/omar-ayaou" target="_blank" class="contact-item">
+            <span>💼 LinkedIn</span>
+          </a>
+        </div>
       </section>
-    </hero>
+    </main>
 
     <script src="js/script.js"></script>
 
     <footer>
-      <p data-key="footer-text">© 2026 Omar Ayaou</p>
+      <p data-key="footer-text">© 2026 Omar Ayaou Ouahdane. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
